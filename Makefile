@@ -10,7 +10,7 @@ MSPPROGRAMMER = rf2500
 CC = msp430-gcc
 SIZE = msp430-size
 
-CFLAGS = -Wall -Wextra -Wl,-Map,$(TARGET).map
+CFLAGS = -Wall -Wextra -Werror -Wl,-Map,$(TARGET).map
 CFLAGS+= -mmcu=$(MCU)
 
 CSTANDARD = -std=c99
