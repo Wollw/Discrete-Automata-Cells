@@ -13,10 +13,7 @@ SIZE = msp430-size
 CFLAGS = -Wall -Wextra -Wl,-Map,$(TARGET).map
 CFLAGS+= -mmcu=$(MCU)
 
-# Compiler flag to set the C Standard level.
-#     gnu89 = c89 plus GCC extensions
-#     gnu99 = c99 plus GCC extensions
-CSTANDARD = -std=gnu99
+CSTANDARD = -std=c99
 
 all: build
 	
