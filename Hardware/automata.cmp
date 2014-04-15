@@ -1,0 +1,45 @@
+Cmp-Mod V01 Created by CvPcb (2013-may-18)-stable date = Mon 14 Apr 2014 06:20:34 PM PDT
+
+BeginCmp
+TimeStamp = /534C7858;
+Reference = C1;
+ValeurCmp = 0.1uF;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /534C8646;
+Reference = P1;
+ValeurCmp = PORT 1;
+IdModule  = SIL-8;
+EndCmp
+
+BeginCmp
+TimeStamp = /534C8B6F;
+Reference = P2;
+ValeurCmp = PORT 2;
+IdModule  = SIL-8;
+EndCmp
+
+BeginCmp
+TimeStamp = /534C765B;
+Reference = Q1;
+ValeurCmp = PN2222A;
+IdModule  = TO92-123;
+EndCmp
+
+BeginCmp
+TimeStamp = /534C7525;
+Reference = R1;
+ValeurCmp = 47k;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /52DC27FD;
+Reference = U1;
+ValeurCmp = MSP430G2553IN20;
+IdModule  = DIP-20__300;
+EndCmp
+
+EndListe

@@ -1,4 +1,4 @@
-update=Sun 13 Apr 2014 10:45:47 PM PDT
+update=Mon 14 Apr 2014 04:47:34 PM PDT
 version=1
 last_client=kicad
 [cvpcb]
@@ -82,6 +82,7 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=/home/davidshere/Documents/Development/Hardware/KiCAD/lib/embedded-microcontrollers
+LibName31=lib/embedded-microcontrollers
+LibName32=lib/myparts
 [general]
 version=1
