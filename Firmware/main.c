@@ -28,6 +28,7 @@ int main(void) {
 
     // Setup Port 2
     //     Pin 0-7:  Read neighbor states
+    P2DIR = 0x0;
     P2REN = P2_NEIGHBORS;
 
     uint8_t my_state = 0;
