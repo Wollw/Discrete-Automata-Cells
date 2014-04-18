@@ -24,11 +24,13 @@ int main(void) {
     //     Pin 1:    Read clock input
     //     Pin 2-7:  Read neighbor states
     P1DIR = P1_BCAST; // only output the broadcast pin
+    P1OUT = 0x0;
     P1REN = P1_NEIGHBORS | P1_CLOCK;
 
     // Setup Port 2
     //     Pin 0-7:  Read neighbor states
     P2DIR = 0x0;
+    P2OUT = 0x0;
     P2REN = P2_NEIGHBORS;
 
     uint8_t my_state = 0;
