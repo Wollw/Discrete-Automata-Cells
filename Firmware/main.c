@@ -34,13 +34,14 @@ int main(void) {
     P2REN = P2_NEIGHBORS;
 
     uint8_t my_state = 0;
+    uint8_t clk = 0;
     for (;;) {
-        uint8_t clk = P1IN & P1_CLOCK;
-        if (clk) {
-            while ((clk = P1IN & P1_CLOCK)); // wait for clock to fall
+        if ((clk = P1IN & P1_CLOCK)) {
 
             uint8_t ln = live_neighbors_port(P1IN, P1_NEIGHBORS)
                        + live_neighbors_port(P2IN, P2_NEIGHBORS);
+
+            while ((clk = P1IN & P1_CLOCK)); // wait for clock to fall
 
             // Conway's Game of Life rules
             if (my_state)
