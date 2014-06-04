@@ -2,7 +2,7 @@ TARGET = main
 
 SRC = $(wildcard *.c)
 
-MCU = msp430g2553
+MCU = msp430g2001
 
 MSPDEBUG = mspdebug
 MSPPROGRAMMER = rf2500
